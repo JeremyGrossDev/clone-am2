@@ -4,6 +4,7 @@ module.exports = {
       "links.papareact.com",
       "pngimg.com",
       "images-eu.ssl-images-amazon.com",
+      "www.junglescout.com",
       "whitebox.com",
       "fakestoreapi.com",
     ],
