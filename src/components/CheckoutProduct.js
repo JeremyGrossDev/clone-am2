@@ -47,7 +47,7 @@ const CheckoutProduct = ({
               <StarIcon key={i} className="h-5 text-yellow-500" />
             ))}
         </div>
-        <p className="text-xs my-2 line-clamp-3">{description}</p>
+        <p className="text-xs my-2 mb-2 line-clamp-3">{description}</p>
         <Currency quantity={price} currency="USD" />
         {hasPrime && (
           <div className="flex items-center space-x-2">

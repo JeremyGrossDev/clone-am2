@@ -1,4 +1,5 @@
 import Product from "./Product";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const ProductFeed = ({ products }) => {
   return (
@@ -57,5 +58,3 @@ const ProductFeed = ({ products }) => {
 };
 
 export default ProductFeed;
-
-//2:03

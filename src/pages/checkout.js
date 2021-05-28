@@ -43,11 +43,11 @@ const Checkout = () => {
             ))}
           </div>
         </div>
-        <div className="flex flex-col bg-white shadow-md">
+        <div className="flex flex-col bg-white shadow-ms p-10">
           {items.length > 0 && (
             <>
               <h2 className="whitespace-nowrap">
-                <h2>Subtotal ({items.length}) item(s): </h2>
+                Subtotal ({items.length}) items:{" "}
                 <span className="font-bold">
                   <Currency quantity={total} currency="USD" />
                 </span>
