@@ -1,14 +1,16 @@
 import Header from "../components/Header";
 import Image from "next/image";
-import { useSelector } from "react-redux";
 import { selectItems, selectTotal } from "../slices/basketSlice";
-import CheckoutProduct from "../components/CheckoutProduct";
+import { useSelector } from "react-redux";
 import Currency from "react-currency-formatter";
-import { useSession } from "next-auth/client";
+import CheckoutProduct from "../components/CheckoutProduct";
 import { loadStripe } from "@stripe/stripe-js";
 import axios from "axios";
+import { useSession } from "next-auth/client";
 
-const stripePromise = loadStripe(`${process.env.stripe_public_key}`);
+const stripePromise = loadStripe(process.env.stripe_public_key);
+// console.log(process.env.stripe_public_key);
+// console.log(typeof `${process.env.stripe_public_key}`);
 
 const Checkout = () => {
   const items = useSelector(selectItems);
@@ -71,7 +73,7 @@ const Checkout = () => {
             ))}
           </div>
         </div>
-        <div className="flex flex-col bg-white shadow-ms p-10">
+        <div className="flex flex-col bg-white shadow-sm p-10">
           {items.length > 0 && (
             <>
               <h2 className="whitespace-nowrap">
