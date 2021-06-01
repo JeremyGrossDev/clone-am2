@@ -11,6 +11,7 @@ import { useSession } from "next-auth/client";
 const stripePromise = loadStripe(process.env.stripe_public_key);
 // console.log(process.env.stripe_public_key);
 // console.log(typeof `${process.env.stripe_public_key}`);
+console.log(process.env.FAKE_API_KEY_V3);
 
 const Checkout = () => {
   const items = useSelector(selectItems);
