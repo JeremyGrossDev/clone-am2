@@ -11,7 +11,7 @@ module.exports = {
   },
   env: {
     stripe_public_key: process.env.STRIPE_PUBLIC_KEY,
-    STRIPE_PUBLIC_KEY: process.env.STRIPE_PUBLIC_KEY,
+    // STRIPE_PUBLIC_KEY: process.env.STRIPE_PUBLIC_KEY,
     FAKE_API_KEY_V3: process.env.FAKE_API_KEY_V3,
   },
 };
